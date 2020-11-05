@@ -19,8 +19,7 @@ public class Varasto {
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
         this.saldo = alkuSaldo;
         this.tilavuus = tilavuusTarkastus(tilavuus);
-        if (alkuSaldo < 0.0) 
-        {
+        if (alkuSaldo < 0.0) {
             this.saldo = 0.0;
         } 
         if (alkuSaldo > tilavuus) {
